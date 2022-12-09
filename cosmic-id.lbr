@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -2557,6 +2557,82 @@ v.2.x</text>
 <rectangle x1="4.693759375" y1="6.7957" x2="4.880259375" y2="6.8190125" layer="21"/>
 <rectangle x1="4.763659375" y1="6.8190125" x2="4.833659375" y2="6.84231875" layer="21"/>
 </package>
+<package name="LORA_BREAKOUT">
+<wire x1="12.8346" y1="-13.831" x2="-9.4654" y2="-13.831" width="0" layer="21"/>
+<wire x1="-9.4654" y1="-13.831" x2="-12.6654" y2="-10.631" width="0" layer="21" curve="-90"/>
+<wire x1="-12.6654" y1="-10.631" x2="-12.6654" y2="13.2698" width="0" layer="21"/>
+<wire x1="-12.6654" y1="13.2698" x2="9.6346" y2="13.2698" width="0" layer="21"/>
+<wire x1="9.6346" y1="13.2698" x2="12.8346" y2="10.0698" width="0" layer="21" curve="-90"/>
+<wire x1="12.8346" y1="10.0698" x2="12.8346" y2="-13.831" width="0" layer="21"/>
+<text x="-9.271" y="6.1976" size="0.8128" layer="21" font="vector">GND</text>
+<text x="-9.271" y="3.4544" size="0.8128" layer="21" font="vector">DIO3</text>
+<text x="-9.271" y="1.016" size="0.8128" layer="21" font="vector">3.3V</text>
+<text x="-9.271" y="-1.7272" size="0.8128" layer="21" font="vector">DIO0</text>
+<text x="-9.271" y="-4.1656" size="0.8128" layer="21" font="vector">DIO1</text>
+<text x="-9.271" y="-6.604" size="0.8128" layer="21" font="vector">DIO2</text>
+<text x="7.2898" y="3.556" size="0.8128" layer="21" font="vector">DIO4</text>
+<text x="7.2898" y="0.8128" size="0.8128" layer="21" font="vector">DIO5</text>
+<text x="7.2898" y="-1.6256" size="0.8128" layer="21" font="vector">RST</text>
+<text x="7.2898" y="-4.064" size="0.8128" layer="21" font="vector">NSS</text>
+<text x="7.2898" y="-6.8072" size="0.8128" layer="21" font="vector">SCK</text>
+<text x="7.2898" y="-9.2456" size="0.8128" layer="21" font="vector">MOSI</text>
+<text x="7.2898" y="-11.684" size="0.8128" layer="21" font="vector">MISO</text>
+<text x="0.2286" y="-12.8524" size="0.8128" layer="21" font="vector" align="bottom-center">RFM96 BREAKOUT</text>
+<text x="8.2804" y="6.0198" size="0.8128" layer="21" font="vector" align="bottom-center">INPUT</text>
+<hole x="9.8298" y="10.287" drill="3.2"/>
+<hole x="-9.652" y="-10.8204" drill="3.2"/>
+<pad name="GND" x="-11.3284" y="6.477" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO3" x="-11.2776" y="3.9624" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3.3V" x="-11.303" y="1.4478" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO0" x="-11.303" y="-1.1176" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO1" x="-11.303" y="-3.6576" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO2" x="-11.303" y="-6.1976" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="INPUT" x="11.5062" y="6.5532" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO4" x="11.5062" y="4.0132" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO5" x="11.5062" y="1.4732" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RST" x="11.5062" y="-1.0414" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="NSS" x="11.5062" y="-3.6068" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SCK" x="11.5062" y="-6.1468" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="MOSI" x="11.5062" y="-8.6868" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="MISO" x="11.5062" y="-11.2268" drill="1" diameter="1.778" shape="octagon"/>
+</package>
+<package name="LORA_BREAKOUT_NO_DRILL">
+<wire x1="12.8346" y1="-13.831" x2="-9.4654" y2="-13.831" width="0" layer="21"/>
+<wire x1="-9.4654" y1="-13.831" x2="-12.6654" y2="-10.631" width="0" layer="21" curve="-90"/>
+<wire x1="-12.6654" y1="-10.631" x2="-12.6654" y2="13.2698" width="0" layer="21"/>
+<wire x1="-12.6654" y1="13.2698" x2="9.6346" y2="13.2698" width="0" layer="21"/>
+<wire x1="9.6346" y1="13.2698" x2="12.8346" y2="10.0698" width="0" layer="21" curve="-90"/>
+<wire x1="12.8346" y1="10.0698" x2="12.8346" y2="-13.831" width="0" layer="21"/>
+<text x="-9.271" y="6.1976" size="0.8128" layer="21" font="vector">GND</text>
+<text x="-9.271" y="3.4544" size="0.8128" layer="21" font="vector">DIO3</text>
+<text x="-9.271" y="1.016" size="0.8128" layer="21" font="vector">3.3V</text>
+<text x="-9.271" y="-1.7272" size="0.8128" layer="21" font="vector">DIO0</text>
+<text x="-9.271" y="-4.1656" size="0.8128" layer="21" font="vector">DIO1</text>
+<text x="-9.271" y="-6.604" size="0.8128" layer="21" font="vector">DIO2</text>
+<text x="7.2898" y="3.556" size="0.8128" layer="21" font="vector">DIO4</text>
+<text x="7.2898" y="0.8128" size="0.8128" layer="21" font="vector">DIO5</text>
+<text x="7.2898" y="-1.6256" size="0.8128" layer="21" font="vector">RST</text>
+<text x="7.2898" y="-4.064" size="0.8128" layer="21" font="vector">NSS</text>
+<text x="7.2898" y="-6.8072" size="0.8128" layer="21" font="vector">SCK</text>
+<text x="7.2898" y="-9.2456" size="0.8128" layer="21" font="vector">MOSI</text>
+<text x="7.2898" y="-11.684" size="0.8128" layer="21" font="vector">MISO</text>
+<text x="0.2286" y="-12.8524" size="0.8128" layer="21" font="vector" align="bottom-center">RFM96 BREAKOUT</text>
+<text x="8.2804" y="6.0198" size="0.8128" layer="21" font="vector" align="bottom-center">INPUT</text>
+<pad name="GND" x="-11.3284" y="6.477" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO3" x="-11.2776" y="3.9624" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3.3V" x="-11.303" y="1.4478" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO0" x="-11.303" y="-1.1176" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO1" x="-11.303" y="-3.6576" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO2" x="-11.303" y="-6.1976" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="INPUT" x="11.5062" y="6.5532" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO4" x="11.5062" y="4.0132" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="DIO5" x="11.5062" y="1.4732" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="RST" x="11.5062" y="-1.0414" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="NSS" x="11.5062" y="-3.6068" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="SCK" x="11.5062" y="-6.1468" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="MOSI" x="11.5062" y="-8.6868" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="MISO" x="11.5062" y="-11.2268" drill="1" diameter="1.778" shape="octagon"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LORA_BREAKOUT_V2">
@@ -2582,6 +2658,27 @@ v.2.x</text>
 </symbol>
 <symbol name="LOGO_COSMIC_ID">
 <text x="0" y="2.54" size="2.54" layer="94">COSMIC.ID</text>
+</symbol>
+<symbol name="LORA_BREAKOUT_V1">
+<pin name="GND" x="-15.24" y="7.62" length="middle"/>
+<pin name="DIO3" x="-15.24" y="5.08" length="middle"/>
+<pin name="3.3V" x="-15.24" y="2.54" length="middle"/>
+<pin name="DIO0" x="-15.24" y="0" length="middle"/>
+<pin name="DIO1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="DIO2" x="-15.24" y="-5.08" length="middle"/>
+<pin name="INPUT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="DIO4" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="DIO5" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="RST" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="NSS" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCK" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="MOSI" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="MISO" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="10.16" y2="12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<text x="-10.16" y="-17.78" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -2623,6 +2720,55 @@ v.2.x</text>
 </technologies>
 </device>
 <device name="MEDIUM" package="LOGO_MEDIUM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LORA_BREAKOUT_V1">
+<gates>
+<gate name="G$1" symbol="LORA_BREAKOUT_V1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DRILL" package="LORA_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="DIO0" pad="DIO0"/>
+<connect gate="G$1" pin="DIO1" pad="DIO1"/>
+<connect gate="G$1" pin="DIO2" pad="DIO2"/>
+<connect gate="G$1" pin="DIO3" pad="DIO3"/>
+<connect gate="G$1" pin="DIO4" pad="DIO4"/>
+<connect gate="G$1" pin="DIO5" pad="DIO5"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INPUT" pad="INPUT"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NSS" pad="NSS"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NO_DRILL" package="LORA_BREAKOUT_NO_DRILL">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="DIO0" pad="DIO0"/>
+<connect gate="G$1" pin="DIO1" pad="DIO1"/>
+<connect gate="G$1" pin="DIO2" pad="DIO2"/>
+<connect gate="G$1" pin="DIO3" pad="DIO3"/>
+<connect gate="G$1" pin="DIO4" pad="DIO4"/>
+<connect gate="G$1" pin="DIO5" pad="DIO5"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INPUT" pad="INPUT"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NSS" pad="NSS"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
